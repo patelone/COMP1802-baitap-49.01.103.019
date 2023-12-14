@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sở thích của tôi</title>
+</head>
+<style> 
+h1,
+    p {
+        font-family: var(--body-font);
+        text-align: center;
+        color: rgb(30, 83, 64);
+        font-family: Arial;
+    }
+    td{width: 30px;height: 20px;border: 1px dotted rgb(39, 38, 35)}
+    .dat{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <div class="dat" >
+    <div >
+        <h1 >XIN CHÀO MỌI NGƯỜI-CẢM ƠN VÌ ĐÃ XEM </h1>
+    </div>
+    <table>
+        <tr>
+            <th>có lẽ tôi vẫn chưa đủ gọi là người lớn nên vẫn còn thích chơi game, bạn có biết trò này không </th>
+            <th><h2>
+                cùng chơi tic tac toe nào
+            </h2>
+        
+            <button type="button " id="btnshow">show</button>
+            <button type="button " id="btnhide">hide</button>
+            <button type="button " id="btntoggle">toggle</button>
+            <button type="button " id="btnClear">Clear</button>
+            <table id="tblbanco"></table>
+            <table>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+            <table>
+                <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+                <script>
+                    $(document).ready(function(){
+                    $("#btnHide").click(function(){
+                        $("#tblbanco").hide(1000);
+                    });
+                    $("#btntoggle").click(function(){
+                        $("#tblbanco").toggle(1000);
+                    });
+                    $("#btnShow").click(function(){
+                        $("#tblbanco").show(1000);
+                    });
+                    let giaTri="X";
+                    $("td").click(function(){
+                        if($(this).html().trim() === ''){
+                            $(this).html(giaTri);
+                            giaTri = giaTri == "X" ? "O" : "X";
+                        }
+                    });
+                    $("#btnClear").click(function(){
+                        $("td").html('');
+                    })
+        
+                });
+                </script>
+            </table></th>
+        </tr>
+        <tr>
+            <th> tôi có lẽ đang tập chơi bóng chuyền ,vì nó rất tốt khi tập luyện thể thao cho sức khỏe tốt đấy nha</th>
+            <th>
+                <img src="https://media-cdn-v2.laodong.vn/storage/newsportal/2023/12/13/1279291/Bong-Chuyen-2.jpeg" alt="">
+                 </th>
+                 <th></th>
+        </tr>
+        
+    </table>
+    <li> 
+        <h1>có lẽ bạn đã hiểu 1 chút về bản thân tôi rồi đấy, chắc vậy</h1>
+    </li>
+</div>
+</body>
+</html>
